@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datas com Javascript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+			//GUARDAR DATA ATUAL EM UMA VARIÁVEL 
+
+			var dt = new Date();
+
+
+			alert(dt.getHours()); //horas
+
+			dt.getMinutes(); //minutos
+
+			dt.getSeconds();//segundos
+
+			document.write(dt + "<br/>"); //mostrando a data completa no documento
+
+
+			//ESPECIFICAR UMA DATA
+			var dtNova = new Date(Date.parse("March 10, 2001"));
+
+			document.write(dtNova + "<br>");
+
+
+			dt.getDay(); //retorna o dia da semana
+
+			dt.getFullYear(); //retorna o ano
+
+
+
+			//personalizar impressao da data
+
+			document.write(dt.getDate()+"/"+(dt.getMonth() + 1)+"/"+dt.getFullYear()+"<br>");
+
+			//PEGAR DIAS DA SEMANA
+			var dias = ["Domingo", "Segunda","Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+
+			document.write(dias[dt.getDay()]+"<br>");
+
+
+
+			//ACRECENTAR 60 DIAS 
+			 dt.setDate(dt.getDate()+60);
+
+	</script>
+
+</body>
+</html>
